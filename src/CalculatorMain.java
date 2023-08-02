@@ -14,7 +14,6 @@ public class CalculatorMain {
         // В данном коде можно в качестве контроллера использовать как CheckingCalculatorController,
         // так и базовый класс CalculatorController. Функциональность не нарушается
 
-
         // ЧЕТВЕРТЫЙ ПРИНЦИП SOLID - принцип разделения интерфейсов
         // В соответствии с ним можно для модели сделать несколько отдельных интерфейсов.
         // Я сделал IAdder, ISubtractor, IMultiplier, IDivider
