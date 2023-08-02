@@ -1,12 +1,13 @@
-public class CalculatorController {
-    private CalculatorView view;
-    private CalculatorModel model;
+public class CalculatorController implements IController {
+    private IView view;
+    private IModel model;
 
-    public CalculatorController(CalculatorModel model, CalculatorView view) {
+    public CalculatorController(IModel model, IView view) {
         this.model = model;
         this.view = view;
     }
 
+    @Override
     public void perfomeOperation(String operation, int num1, int num2) {
         switch (operation) {
             case "+":
